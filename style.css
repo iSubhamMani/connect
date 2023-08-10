@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --txt-clr-light: #1e2138;
+    --card-clr-light: #1e2138;
+    --card-txt-clr-light: #fff;
+    --card-hover-clr: #1e2138d5;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    background: url(./assets/background.svg);
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+header > h1{
+    color: var(--txt-clr-light);
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: clamp(1.4rem, 6vw, 2rem);
+}
+
+header > p{
+    color: var(--txt-clr-light);
+    font-weight: 500;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.social-links-container{
+    display: grid;
+    grid-template-columns: max(30%, 250px);
+    gap: 16px;
+    justify-content: center;
+    padding: 20px 0;
+
+}
+
+.social-links-container .link-card{
+    background-color: var(--card-clr-light);
+    padding: 10px 20px;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.2);
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links-container .link-card:hover{
+    transition: 0.2s;
+    background-color: var(--card-hover-clr);
+    cursor: pointer;
+}
+
+
+.social-links-container .link-card span{
+    color: var(--card-txt-clr-light);
+    font-size: clamp(1rem, 3vw, 1.25em);
+}
+
+footer{
+    font-size: 1rem;
+    color: var(--txt-clr-light);
+    font-weight: 500;
+    margin-bottom: 10px;
+
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
