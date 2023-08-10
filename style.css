@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -53,17 +54,34 @@ header > p{
     gap: 16px;
     justify-content: center;
     padding: 20px 0;
-
 }
 
 .social-links-container .link-card{
     background-color: var(--card-clr-light);
-    padding: 10px 20px;
     box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.2);
+}
 
+.social-links-container .link-card .card-content{
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     gap: 10px;
+
+    position: relative;
+}
+
+.social-links-container .link-card .card-content .external-icon{
+    position: absolute;
+    right: 0;
+    margin-right: 12px;
+}
+
+.social-links-container .link-card .card-content .external-icon::before{
+    font-family: "Font Awesome 5 Free";
+    content: '\f0c1';
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--card-txt-clr-light);
 }
 
 .social-links-container .link-card:hover{
@@ -72,6 +90,9 @@ header > p{
     cursor: pointer;
 }
 
+.social-links-container .link-card a{
+    text-decoration: none;
+}
 
 .social-links-container .link-card span{
     color: var(--card-txt-clr-light);
