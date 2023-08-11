@@ -41,6 +41,7 @@ header > h1{
     white-space: nowrap;
     font-weight: 600;
     font-size: clamp(1.4rem, 6vw, 2rem);
+    margin-bottom: 12px;
 }
 
 header > p{
