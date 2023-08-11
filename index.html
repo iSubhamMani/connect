@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
     <script src="https://kit.fontawesome.com/93eef3d5b6.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -12,6 +13,7 @@
         <h1>Hi! I am Subham Mani</h1>
         <p>Connect with me <i class="fa-solid fa-handshake-simple fa-lg" style="color: #1e2138;"></i></p>
     </header>
+    
     <main class="social-links-container">
         <div class="link-card link-linkedin">
             <a href="#">
@@ -32,13 +34,11 @@
             </a>
         </div>
         <div class="link-card link-gmail">
-            <a href="#">
-                <div class="card-content">
-                    <i class="fa-solid fa-at fa-lg" style="color: #EB493B;"></i>
-                    <span>Gmail</span>
-                    <span class="external-icon"></span>
-                </div>
-            </a>
+            <div class="card-content">
+                <i class="fa-solid fa-at fa-lg" style="color: #EB493B;"></i>
+                <span>Gmail</span>
+                <span id="copy-to-clipboard" class="copy"></span>
+            </div>
         </div>
         <div class="link-card link-instagram">
             <a href="#">
