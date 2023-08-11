@@ -97,8 +97,8 @@ header > p{
 
 .social-links-container .link-card .card-content .copied::after{
     font-family: "Font Awesome 5 Free";
-    content: '\f328';
-    font-weight: 500;
+    content: '\f46c';
+    font-weight: 900;
     font-size: 1rem;
     color: var(--done-clr);
 }
