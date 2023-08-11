@@ -2,12 +2,18 @@ const copyIcon = document.getElementById('copy-to-clipboard');
 const gmailCard = document.querySelector('.link-gmail');
 
 let copied = false;
+const emailId = 'manisubham09@gmail.com';
 
 function copyEmailToClipboard(){
     if(copied === false){
+        // setup visual elements
+
         copied = true;
         copyIcon.classList.remove('copy');
         copyIcon.classList.add('copied');
+
+        // copy email to clipboard
+        navigator.clipboard.writeText(emailId);
     }
 }
 
