@@ -22,6 +22,7 @@ body{
     min-height: 100%;
     background: url(./assets/background.svg);
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
 
     display: flex;
     flex-direction: column;
@@ -41,7 +42,7 @@ header > h1{
     white-space: nowrap;
     font-weight: 600;
     font-size: clamp(1.4rem, 6vw, 2rem);
-    margin-bottom: 12px;
+    margin-bottom: 4px;
 }
 
 header > p{
@@ -97,11 +98,12 @@ header > p{
 }
 
 .social-links-container .link-card .card-content .copied::after{
-    font-family: "Font Awesome 5 Free";
-    content: '\f46c';
-    font-weight: 900;
-    font-size: 1rem;
-    color: var(--done-clr);
+   content: 'Email Copied!';
+   background-color: #1e2138;
+   color: #9af36d;
+   font-size: clamp(0.7rem, 2vw, 1rem);
+   border-radius: 5px;
+   padding: 4px 8px;
 }
 
 .social-links-container .link-card:hover{
