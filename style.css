@@ -71,6 +71,7 @@ header > p{
     background-position: right bottom;
     transition: all .3s ease;
     border-radius: 4px;
+    border-left: 6px solid var(--card-hover-clr);
 }
 
 .social-links-container .link-card:hover{
@@ -136,6 +137,7 @@ header > p{
 
 .social-links-container .link-card span{
     color: var(--card-txt-clr-light);
+    font-weight: 500;
     font-size: clamp(1rem, 3vw, 1.25em);
 }
 
