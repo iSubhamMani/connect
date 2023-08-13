@@ -8,9 +8,10 @@
 
 :root{
     --txt-clr-light: #1e2138;
-    --card-clr-light: #1e2138;
-    --card-txt-clr-light: #fff;
-    --card-hover-clr: #1e2138d5;
+    --card-clr-light: #ffffff81;
+    --card-txt-clr-light: #1e2138;
+    --card-hover-txt-clr: #fff;
+    --card-hover-clr: #1e2138;
     --done-clr: #64ef5f;
 }
 
@@ -62,8 +63,21 @@ header > p{
 }
 
 .social-links-container .link-card{
-    background-color: var(--card-clr-light);
+    /*background-color: var(--card-clr-light);*/
     box-shadow: 0px 0px 50px 0px rgba(30,33,56,0.3);
+
+    background: linear-gradient(to right, var(--card-hover-clr) 50%, var(--card-clr-light) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .4s ease;
+    border-radius: 4px;
+}
+
+.social-links-container .link-card:hover{
+    /*transition: 0.2s;
+    background-color: var(--card-hover-clr);*/
+    background-position: left bottom;
+    cursor: pointer;
 }
 
 .social-links-container .link-card .card-content{
@@ -88,30 +102,32 @@ header > p{
     content: '\f0c1';
     font-weight: 900;
     font-size: 1rem;
-    color: var(--card-txt-clr-light);
+    color: var(--card-hover-txt-clr);
 }
+
+.social-links-container .link-card .card-content #twitter-logo{
+    color: #000;
+} 
+
+.social-links-container .link-card:hover .card-content #twitter-logo{
+    color: var(--card-hover-txt-clr);
+} 
 
 .social-links-container .link-card:hover .card-content .copy::after{
     font-family: "Font Awesome 5 Free";
     content: '\f328';
     font-weight: 500;
     font-size: 1rem;
-    color: var(--card-txt-clr-light);
+    color: var(--card-hover-txt-clr);
 }
 
 .social-links-container .link-card .card-content .copied::after{
    content: 'Email Copied!';
-   background-color: #1e2138;
+   background-color: #2f3454;
    color: #9af36d;
    font-size: clamp(0.7rem, 2vw, 1rem);
    border-radius: 5px;
    padding: 4px 8px;
-}
-
-.social-links-container .link-card:hover{
-    transition: 0.2s;
-    background-color: var(--card-hover-clr);
-    cursor: pointer;
 }
 
 .social-links-container .link-card a{
@@ -120,6 +136,11 @@ header > p{
 
 .social-links-container .link-card span{
     color: var(--card-txt-clr-light);
+    font-size: clamp(1rem, 3vw, 1.25em);
+}
+
+.social-links-container .link-card:hover span{
+    color: var(--card-hover-txt-clr);
     font-size: clamp(1rem, 3vw, 1.25em);
 }
 
