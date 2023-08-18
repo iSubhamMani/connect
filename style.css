@@ -7,11 +7,14 @@
 }
 
 :root{
-    --txt-clr-light: #1e2138;
-    --card-clr-light: #ffffff81;
-    --card-txt-clr-light: #1e2138;
-    --card-hover-txt-clr: #fff;
-    --card-hover-clr: #1e2138;
+    --bg-clr: #161218;
+    --txt-clr-light: #fff;
+    --card-clr-light: #4C3B71;
+    --card-txt-clr-light: #ffffff;
+    --card-hover-txt-clr: #2b1e38;
+    --card-icon-hover-clr: #2b1e38;
+    --card-hover-clr: #9979e5;
+    --copied-bg-clr: #3e305f;
     --done-clr: #64ef5f;
 }
 
@@ -21,13 +24,23 @@ html{
 
 body{
     min-height: 100%;
-    background: url(./assets/background.svg);
+    /*background: url(./assets/background.svg);*/
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff;
+    background-color: var(--bg-clr);
 
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+canvas {
+    display: block;
+}
+  
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 header{
@@ -52,6 +65,9 @@ header > p{
     font-weight: 500;
     font-size: clamp(1rem, 3vw, 1.2rem);
     text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .social-links-container{
@@ -107,12 +123,28 @@ header > p{
 }
 
 .social-links-container .link-card .card-content #twitter-logo{
-    color: #000;
-} 
+    color: #FFF;
+}
 
-.social-links-container .link-card:hover .card-content #twitter-logo{
-    color: var(--card-hover-txt-clr);
-} 
+.social-links-container .link-card .card-content #linkedin-logo{
+    color: #1b9ce2;
+}
+
+.social-links-container .link-card .card-content #gmail-logo{
+    color: #DD4A44;
+}
+
+.social-links-container .link-card .card-content #insta-logo{
+    color: #f655fb;
+}
+
+.social-links-container .link-card:hover .card-content #twitter-logo,
+.social-links-container .link-card:hover .card-content #linkedin-logo,
+.social-links-container .link-card:hover .card-content #gmail-logo,
+.social-links-container .link-card:hover .card-content #twitter-logo,
+.social-links-container .link-card:hover .card-content #insta-logo{
+    color: var(--card-icon-hover-clr);
+}
 
 .social-links-container .link-card:hover .card-content .copy::after{
     font-family: "Font Awesome 5 Free";
@@ -124,7 +156,7 @@ header > p{
 
 .social-links-container .link-card .card-content .copied::after{
    content: 'Email Copied!';
-   background-color: #2f3454;
+   background-color: var(--copied-bg-clr);
    color: #9af36d;
    font-size: clamp(0.7rem, 2vw, 1rem);
    border-radius: 5px;
