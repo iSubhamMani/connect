@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./index.js" defer></script>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://kit.fontawesome.com/93eef3d5b6.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/link.png">
 </head>
 <body>
+    <div id="particles-js"></div>
     <header>
         <h1>Namaste Duniya!</h1>
-        <p>Let's connect <i class="fa-solid fa-handshake-simple fa-lg" style="color: #1e2138;"></i></p>
+        <p>Let's connect <i class="fa-solid fa-handshake-simple fa-lg" style="color: #fff;"></i></p>
     </header>
     
     <main class="social-links-container">
         <div class="link-card link-linkedin">
             <a href="#">
                 <div class="card-content">
-                    <i class="fa-brands fa-linkedin-in fa-lg" style="color: #6396ef;"></i>
+                    <i class="fa-brands fa-linkedin-in fa-lg" id="linkedin-logo"></i>
                     <span>LinkedIn</span>
                     <span class="external-icon"></span>
                 </div>
@@ -38,7 +40,7 @@
         </div>
         <div class="link-card link-gmail">
             <div class="card-content">
-                <i class="fa-solid fa-at fa-lg" style="color: #EB493B;"></i>
+                <i class="fa-solid fa-at fa-lg" id="gmail-logo"></i>
                 <span>Gmail</span>
                 <span id="copy-to-clipboard" class="copy"></span>
             </div>
@@ -46,7 +48,7 @@
         <div class="link-card link-instagram">
             <a href="https://www.instagram.com/maru._kun/" target="_blank">
                 <div class="card-content">
-                    <i class="fa-brands fa-instagram fa-lg" style="color: #FD0BBE;"></i>
+                    <i class="fa-brands fa-instagram fa-lg" id="insta-logo"></i>
                     <span>Instagram</span>
                     <span class="external-icon"></span>
                 </div>
@@ -55,7 +57,7 @@
     </main>
 
     <footer>
-        <p><i class="fa-regular fa-copyright" style="color: #1e2138;"></i> <script>document.write(new Date().getFullYear());</script> Subham Mani</p>
+        <p><i class="fa-regular fa-copyright" style="color: #fff;"></i> <script>document.write(new Date().getFullYear());</script> Subham Mani</p>
     </footer>
 </body>
 </html>
