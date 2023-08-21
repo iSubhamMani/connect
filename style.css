@@ -7,14 +7,14 @@
 }
 
 :root{
-    --bg-clr: #161218;
+    --bg-clr: #12181c;
     --txt-clr-light: #fff;
-    --card-clr-light: #4C3B71;
+    --card-clr-light: #1f3953;
     --card-txt-clr-light: #ffffff;
-    --card-hover-txt-clr: #2b1e38;
-    --card-icon-hover-clr: #2b1e38;
-    --card-hover-clr: #9979e5;
-    --copied-bg-clr: #3e305f;
+    --card-hover-txt-clr: #143759;
+    --card-icon-hover-clr: #143759;
+    --card-hover-clr: #6491c1;
+    --copied-bg-clr: #143759;
     --done-clr: #64ef5f;
 }
 
