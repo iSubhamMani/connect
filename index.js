@@ -5,14 +5,6 @@ const emailManager = (function(){
     let copied = false;
     const emailId = 'manisubham09@gmail.com';
 
-    gmailCard.addEventListener('click', () => {
-        emailManager.copyEmailToClipboard();
-    });
-
-    gmailCard.addEventListener('mouseleave', () => {
-        emailManager.resetCopy();
-    });
-
     const copyEmailToClipboard = () => {
       if(copied === false){
         // setup visual elements
@@ -34,10 +26,13 @@ const emailManager = (function(){
       }
     }
 
-    return {
-        copyEmailToClipboard,
-        resetCopy
-    }
+    gmailCard.addEventListener('click', () => {
+        copyEmailToClipboard();
+    });
+
+    gmailCard.addEventListener('mouseleave', () => {
+        resetCopy();
+    });
 })();
 
 particlesJS("particles-js", {
