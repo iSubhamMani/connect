@@ -1,9 +1,17 @@
-const copyIcon = document.getElementById('copy-to-clipboard');
-const gmailCard = document.querySelector('.link-gmail');
-
 const emailManager = (function(){
+    const copyIcon = document.getElementById('copy-to-clipboard');
+    const gmailCard = document.querySelector('.link-gmail');
+
     let copied = false;
     const emailId = 'manisubham09@gmail.com';
+
+    gmailCard.addEventListener('click', () => {
+        emailManager.copyEmailToClipboard();
+    });
+
+    gmailCard.addEventListener('mouseleave', () => {
+        emailManager.resetCopy();
+    });
 
     const copyEmailToClipboard = () => {
       if(copied === false){
@@ -31,14 +39,6 @@ const emailManager = (function(){
         resetCopy
     }
 })();
-
-gmailCard.addEventListener('click', () => {
-    emailManager.copyEmailToClipboard();
-});
-
-gmailCard.addEventListener('mouseleave', () => {
-    emailManager.resetCopy();
-})
 
 particlesJS("particles-js", {
     "particles": {
