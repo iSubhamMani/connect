@@ -51,16 +51,6 @@ header > h1{
     margin-bottom: 4px;
 }
 
-header > p{
-    color: var(--txt-clr-light);
-    font-weight: 500;
-    font-size: clamp(1rem, 3vw, 1.2rem);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
 .about-me{
     display: flex;
     flex-direction: column;
@@ -81,6 +71,17 @@ header > p{
     background-size:cover;
     border-radius: 50%;
 }
+
+.about-me > p{
+    color: var(--txt-clr-light);
+    font-weight: 500;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 
 .about-me > .description{
     display: flex;
