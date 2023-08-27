@@ -12,9 +12,9 @@
     --card-clr-light: transparent;
     --card-hover-clr: #fff;
     --card-txt-clr-light: #ffffff;
-    --card-hover-txt-clr: #12181c;
-    --card-icon-hover-clr: #12181c;
-    --copied-bg-clr: #12181c;
+    --card-hover-txt-clr: #0f1417;
+    --card-icon-hover-clr: #0f1417;
+    --copied-bg-clr: #0f1417;
     --card-outline-clr: #fff;
     --done-clr: #64ef5f;
 }
