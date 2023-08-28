@@ -160,16 +160,11 @@ header > h1{
     color: #DD4A44;
 }
 
-.social-links-container .link-card .card-content #insta-logo{
-    color: #f655fb;
-}
-
 .social-links-container .link-card:hover .card-content #twitter-logo,
 .social-links-container .link-card:hover .card-content #linkedin-logo,
 .social-links-container .link-card:hover .card-content #gmail-logo,
 .social-links-container .link-card:hover .card-content #github-logo,
-.social-links-container .link-card:hover .card-content #twitter-logo,
-.social-links-container .link-card:hover .card-content #insta-logo{
+.social-links-container .link-card:hover .card-content #twitter-logo{    
     color: var(--card-icon-hover-clr);
 }
 
