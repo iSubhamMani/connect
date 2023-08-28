@@ -148,6 +148,10 @@ header > h1{
     color: #FFF;
 }
 
+.social-links-container .link-card .card-content #github-logo{
+    color: #fff;
+}
+
 .social-links-container .link-card .card-content #linkedin-logo{
     color: #1b9ce2;
 }
@@ -163,6 +167,7 @@ header > h1{
 .social-links-container .link-card:hover .card-content #twitter-logo,
 .social-links-container .link-card:hover .card-content #linkedin-logo,
 .social-links-container .link-card:hover .card-content #gmail-logo,
+.social-links-container .link-card:hover .card-content #github-logo,
 .social-links-container .link-card:hover .card-content #twitter-logo,
 .social-links-container .link-card:hover .card-content #insta-logo{
     color: var(--card-icon-hover-clr);
