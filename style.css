@@ -47,7 +47,7 @@ header > h1{
     color: var(--txt-clr-light);
     white-space: nowrap;
     font-weight: 600;
-    font-size: clamp(1.4rem, 6vw, 2rem);
+    font-size: 2rem;
     margin-bottom: 4px;
 }
 
@@ -75,7 +75,7 @@ header > h1{
 .about-me > p{
     color: var(--txt-clr-light);
     font-weight: 500;
-    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-size: 1.1rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@ header > h1{
 .about-me > .description span{
     color: var(--txt-clr-light);
     font-weight: 500;
-    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-size: 1.1rem;
     text-align: center;
 }
 
@@ -180,7 +180,7 @@ header > h1{
    content: 'Email Copied!';
    background-color: var(--copied-bg-clr);
    color: #9af36d;
-   font-size: clamp(0.7rem, 2vw, 1rem);
+   font-size: 1rem;
    border-radius: 5px;
    padding: 4px 8px;
 }
@@ -192,12 +192,11 @@ header > h1{
 .social-links-container .link-card span{
     color: var(--card-txt-clr-light);
     font-weight: 500;
-    font-size: clamp(1rem, 3vw, 1.25em);
+    font-size: 1.1rem;
 }
 
 .social-links-container .link-card:hover span{
     color: var(--card-hover-txt-clr);
-    font-size: clamp(1rem, 3vw, 1.25em);
 }
 
 footer{
@@ -215,5 +214,21 @@ footer{
 @media(max-width: 600px){
     .social-links-container .link-card .card-content{
         padding: 10px 26px 10px 26px;
+    }
+
+    header > h1{
+        font-size: 1.6rem;
+    }
+
+    .about-me > p{
+        font-size: 1rem;
+    }
+
+    .about-me > .description span{
+        font-size: 1rem;
+    }
+
+    .social-links-container .link-card span{
+        font-size: 1rem;
     }
 }
