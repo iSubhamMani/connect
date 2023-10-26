@@ -96,7 +96,7 @@ header > h1{
 .about-me > p{
     color: var(--txt-clr-light);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -344,7 +344,7 @@ footer{
     }
 
     .about-me > p{
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .about-me > .description span{
