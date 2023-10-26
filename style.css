@@ -8,6 +8,7 @@
 
 :root{
     --bg-clr: #0f1417;
+    --border-clr-circle: #fff;
     --txt-clr-light: #fff;
     --card-clr-light: transparent;
     --card-hover-clr: #fff;
@@ -90,7 +91,8 @@ header > h1{
     height: 100%;
     background-color: var(--card-hover-clr);
     background-size:cover;
-    border-radius: 50%;
+    border-radius: 100%;
+    border: 2px solid var(--border-clr-circle);
 }
 
 .about-me > p{
