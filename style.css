@@ -47,7 +47,7 @@ header > h1{
     color: var(--txt-clr-light);
     white-space: nowrap;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 4px;
 }
 
@@ -75,7 +75,7 @@ header > h1{
 .about-me > p{
     color: var(--txt-clr-light);
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@ header > h1{
 .about-me > .description span{
     color: var(--txt-clr-light);
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -192,7 +192,7 @@ header > h1{
 .social-links-container .link-card span{
     color: var(--card-txt-clr-light);
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .social-links-container .link-card:hover span{
@@ -217,18 +217,22 @@ footer{
     }
 
     header > h1{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .about-me > p{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .about-me > .description span{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .social-links-container .link-card span{
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+
+    footer { 
+        font-size: 0.9rem;
     }
 }
