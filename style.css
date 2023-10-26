@@ -49,6 +49,27 @@ header > h1{
     font-weight: 600;
     font-size: 1.8rem;
     margin-bottom: 4px;
+    animation-duration: 0.8s;
+    animation-name: slideIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    transform-origin: top
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
 }
 
 .about-me{
@@ -80,8 +101,21 @@ header > h1{
     display: flex;
     align-items: center;
     gap: 8px;
+    animation-duration: 1s;
+    animation-name: slideConnect;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
 }
 
+@keyframes slideConnect { 
+    from {
+        opacity: 0%;
+    }
+
+    to { 
+        opacity: 100%;
+    }
+}
 
 .about-me > .description{
     display: flex;
