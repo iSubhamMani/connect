@@ -137,19 +137,102 @@ header > h1{
 }
 
 .social-links-container .link-card{
-    /*background-color: var(--card-clr-light);*/
-    box-shadow: 0px 0px 50px 0px rgba(30,33,56,0.3);
-
-    background: linear-gradient(to right, var(--card-hover-clr) 50%, var(--card-clr-light) 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all .3s ease;
     border-radius: 2rem;
     outline: 2px solid var(--card-outline-clr);
+    background-color: var(--bg-clr);
+    transition: background-color 250ms ease-out, transform 300ms;
+}
+
+.social-links-container .link-card.link-linkedin{
+    animation-name: scaleCard1;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+.social-links-container .link-card.link-twitter{
+    animation-name: scaleCard2;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+.social-links-container .link-card.link-github{
+    animation-name: scaleCard3;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+.social-links-container .link-card.link-gmail{
+    animation-name: scaleCard4;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes scaleCard1 {
+    from {
+        transform: translateY(-150%);
+        opacity: 0%;
+    }
+
+    70% {
+        transform: translateY(10%);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes scaleCard2 {
+    from {
+        transform: translateY(-150%);
+        opacity: 0%;
+    }
+
+    60% {
+        transform: translateY(15%);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes scaleCard3 {
+    from {
+        transform: translateY(-150%);
+        opacity: 0%;
+    }
+
+    50% {
+        transform: translateY(20%);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes scaleCard4 {
+    from {
+        transform: translateY(-150%);
+        opacity: 0%;
+    }
+
+    40% {
+        transform: translateY(25%);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
 }
 
 .social-links-container .link-card:hover{
-    background-position: left bottom;
+    background-color: var(--card-hover-clr);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -214,13 +297,19 @@ header > h1{
    content: 'Email Copied!';
    background-color: var(--copied-bg-clr);
    color: #9af36d;
-   font-size: 1rem;
+   font-size: 0.8rem;
    border-radius: 5px;
    padding: 4px 8px;
 }
 
 .social-links-container .link-card a{
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .social-links-container .link-card span{
