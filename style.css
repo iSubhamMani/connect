@@ -155,39 +155,39 @@ header > h1{
 
 .social-links-container .link-card.link-linkedin{
     animation-name: scaleCard1;
-    animation-duration: 0.5s;
+    animation-duration: 0.6s;
     animation-iteration-count: 1;
 }
 
 .social-links-container .link-card.link-twitter{
     animation-name: scaleCard2;
-    animation-duration: 0.5s;
+    animation-duration: 0.6s;
     animation-iteration-count: 1;
 }
 
 .social-links-container .link-card.link-github{
     animation-name: scaleCard3;
-    animation-duration: 0.5s;
+    animation-duration: 0.6s;
     animation-iteration-count: 1;
 }
 .social-links-container .link-card.link-gmail{
     animation-name: scaleCard4;
-    animation-duration: 0.5s;
+    animation-duration: 0.6s;
     animation-iteration-count: 1;
 }
 
 @keyframes scaleCard1 {
     from {
-        transform: translateY(-150%);
+        transform: translateX(-150%);
         opacity: 0%;
     }
 
     70% {
-        transform: translateY(10%);
+        transform: translateX(10%);
     }
 
     to {
-        transform: translateY(0);
+        transform: translateX(0);
         opacity: 100%;
     }
 }
@@ -195,7 +195,7 @@ header > h1{
 @keyframes scaleCard2 {
     from {
         transform: translateY(-150%);
-        opacity: 0%;
+        opacity: 2%;
     }
 
     60% {
@@ -211,7 +211,7 @@ header > h1{
 @keyframes scaleCard3 {
     from {
         transform: translateY(-150%);
-        opacity: 0%;
+        opacity: 5%;
     }
 
     50% {
@@ -227,7 +227,7 @@ header > h1{
 @keyframes scaleCard4 {
     from {
         transform: translateY(-150%);
-        opacity: 0%;
+        opacity: 10%;
     }
 
     40% {
@@ -350,6 +350,10 @@ footer{
     }
 
     header > h1{
+        font-size: 1.4rem;
+    }
+
+    header > span{
         font-size: 1.4rem;
     }
 
