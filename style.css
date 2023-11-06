@@ -344,32 +344,8 @@ footer{
     justify-content: center;
 }
 
-@media(max-width: 600px){
-    .social-links-container .link-card .card-content{
-        padding: 10px 26px 10px 26px;
-    }
-
-    header > h1{
-        font-size: 1.4rem;
-    }
-
-    header > span{
-        font-size: 1.4rem;
-    }
-
-    .about-me > p{
-        font-size: 1rem;
-    }
-
-    .about-me > .description span{
-        font-size: 0.9rem;
-    }
-
-    .social-links-container .link-card span{
-        font-size: 0.9rem;
-    }
-
-    footer { 
-        font-size: 0.9rem;
+@media(min-width: 1500px) {
+    .social-links-container{
+        grid-template-columns: 500px;
     }
 }
